@@ -1,16 +1,30 @@
-#include "GlWindow.h"
+#include "GlApp.h"
 
-void redraw() {
+class MySketch : public GlApp {
+public:
 
-	glClear(GL_COLOR_BUFFER_BIT);
-	glBegin(GL_TRIANGLES);
-		glVertex2f(0.5,0);
-		glVertex2f(- 0.5, 0);
-		glVertex2f(0, 1);
-	glEnd();
-}
+	MySketch(const unsigned int w, const unsigned int h, const std::string& t)
+		: GlApp::GlApp{w,h,t}
+	{
+		/* Setup */
+
+
+	}
+
+
+
+	void draw() override {
+
+
+	
+	}
+
+	
+
+};
 
 int main() {
 	/* Creates a new opengl enabled window usinw width, height, title, rearaw function pointer */
-	new GlWindow{ 1080,720,"Window1",&redraw };
+	MySketch* app{ new MySketch {1080,720,"Titles"} };
+	app->run();
 }

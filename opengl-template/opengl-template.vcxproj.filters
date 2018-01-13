@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\GlWindow.h">
+    <ClInclude Include="src\GlApp.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
