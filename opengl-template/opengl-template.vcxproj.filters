@@ -30,4 +30,8 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="glsl\vertex_shader.glsl" />
+    <None Include="glsl\fragment_shader.glsl" />
+  </ItemGroup>
 </Project>
